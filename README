@@ -1,0 +1,91 @@
+# AI Task Manager 💻
+
+A smart task management application with intelligent natural language processing built entirely with JavaScript - no external APIs required!
+
+![Task Manager Demo](https://img.shields.io/badge/React-18.2.0-blue) ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.3.0-38bdf8) ![License](https://img.shields.io/badge/license-MIT-green)
+
+## 🌟 Features
+
+- 🧠 Smart Natural Language Processing - Custom JavaScript parsing algorithm
+- 🏷️ Auto-categorization - Keyword-based intelligent category detection
+- ⚡ Priority Detection - Automatically identifies urgency from context
+- 📅 Flexible Date Parsing - Understands "tomorrow", "next Monday", "in 3 days", etc.
+- ⏰ Time Extraction - Supports 12-hour, 24-hour, and word-based time formats
+- 🔄 Recurring Tasks - Daily, weekly, and monthly repetition support
+- ✏️ Inline Editing - Quick task title updates
+- 💾 Local Persistence - All data saved in browser localStorage
+- 📊 Task Analytics - Real-time statistics dashboard
+- 🎨 Modern UI - Beautiful, responsive design with Tailwind CSS
+
+## 💻 Tech Stack
+
+- React 18 - Modern UI library with hooks
+- Tailwind CSS - Utility-first CSS framework
+- Lucide Icons - Beautiful SVG icon set
+- LocalStorage API - Client-side data persistence
+- Pure JavaScript - No external NLP libraries
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository**
+```bash
+git clone https://github.com/YOUR_USERNAME/AITaskManager.git
+cd AITaskManager
+```
+
+2. Install dependencies**
+```bash
+npm install
+```
+
+3. Install Tailwind CSS**
+```bash
+npm install -D tailwindcss
+npx tailwindcss init
+```
+
+4. Start the development server**
+```bash
+npm start
+```
+
+5. **Open your browser**
+Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 🎯 Usage Examples
+
+This app intelligently parses natural language input:
+````
+Input: "Buy groceries tomorrow at 3pm"
+- Category: Shopping
+- Date: Tomorrow
+- Time: 15:00
+- Priority: Medium
+
+Input: "Urgent: Submit project report Friday"
+- Category: Work
+- Date: Next Friday
+- Priority: High
+
+Input: "Doctor appointment next Monday morning"
+- Category: Health
+- Date: Next Monday
+- Time: 09:00
+- Priority: Medium
+
+Input: "Gym workout every day"
+- Category: Health
+- Recurring: Daily
+- Priority: Medium
+
+Input: "Pay rent on 1/15"
+-Category: Finance
+- Date: January 15
+- Priority: Medium
