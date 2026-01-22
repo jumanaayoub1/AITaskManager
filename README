@@ -2,8 +2,6 @@
 
 A smart task management application with intelligent natural language processing built entirely with JavaScript - no external APIs required!
 
-![Task Manager Demo](https://img.shields.io/badge/React-18.2.0-blue) ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.3.0-38bdf8) ![License](https://img.shields.io/badge/license-MIT-green)
-
 ## 🌟 Features
 
 - 🧠 Smart Natural Language Processing - Custom JavaScript parsing algorithm
