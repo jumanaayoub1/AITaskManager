@@ -26,3 +26,25 @@ import { Calendar, Clock, Tag, Trash2, CheckCircle, Circle, Plus, Sparkles, Aler
  * - LocalStorage for data persistence
  * - Responsive UI design
  */
+
+const App = () => {
+  // State management
+  const [tasks, setTasks] = useState([]);
+  const [inputText, setInputText] = useState('');
+  const [filter, setFilter] = useState('all');
+  const [sortBy, setSortBy] = useState('date');
+  const [editingTask, setEditingTask] = useState(null);
+  const [editText, setEditText] = useState('');
+
+  // Load tasks from localStorage on component mount
+  useEffect(() => {
+    const savedTasks = localStorage.getItem('taskManagerTasks');
+    if (savedTasks) {
+      setTasks(JSON.parse(savedTasks));
+    }
+  }, []);
+
+  // Persist tasks to localStorage whenever they change
+  useEffect(() => {
+    localStorage.setItem('taskManagerTasks', JSON.stringify(tasks));
+  }, [tasks]);
